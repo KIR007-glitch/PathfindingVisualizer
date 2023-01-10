@@ -100,6 +100,8 @@ export default class PathfindingVisualizer extends Component {
     this.animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder);
   }
 
+
+//////////////////////////////// Visualizing the A star algorithm///////////////////////////////////////////////////
   //Setting up a method to visualize A star algorithm
   visualizeAstar(){
     const{grid} = this.state;
@@ -108,12 +110,15 @@ export default class PathfindingVisualizer extends Component {
     // Defining the finish node
      const finishNode = grid[FINISH_NODE_ROW][FINISH_NODE_COL];
     // Visualizing all the visited nodes on the grid
-    const visitedNodesInOrder = dijkstra(grid,startNode,finishNode)
+    const visitedNodesInOrder = Astar(grid,startNode,finishNode)
     // Constructing the shortest path and then visualizing it on the grid
     const nodesInShortestPathOrder = getNodesInShortestPathOrder(finishNode);
     // Animating the visited nodes and the shortest path in Astar
     this.animateDijkstra(visitedNodesInOrder,nodesInShortestPathOrder);
   }
+
+
+  
 
 
 
