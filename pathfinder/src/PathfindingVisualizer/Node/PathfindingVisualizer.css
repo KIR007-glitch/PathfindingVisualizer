@@ -1,0 +1,19 @@
+.grid-container {
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+  }
+.grid {
+    white-space: pre;
+    left:50%;
+    top: 20%;
+    margin-right: -50%;
+    font-size:0;
+  }
+button {
+    margin: 2px;
+  }
+
+
+/* This controls the formatting related to the grid*/
